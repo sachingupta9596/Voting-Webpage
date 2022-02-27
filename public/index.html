@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusher poll</title>
+    <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>OS Vote</h1>
+        <p>Vote for favourite OS</p>
+        <form id="vote-form">
+            <p>
+                <input class="with-gap" type="radio" id="windows" name="os" value="Windows">
+                <label for="windows">Windows</label>
+            </p>
+            <p>
+                <input type="radio" id="macos" name="os" value="Macos">
+                <label for="macos">Macos</label>
+            </p>
+            <p>
+                <input type="radio" id="linux" name="os" value="Linux">
+                <label for="linux">Linux</label>
+            </p>
+            <p>
+                <input type="radio" id="others" name="os" value="Others">
+                <label for="others">Something Else</label>
+            </p>
+            <input type="submit" value="Vote" class="btn">
+        </form>
+
+        <br><br>
+
+        <div id="chartContainer" style="height: 300px; width: 100%"></div>
+    </div>
+
+   
+    
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+   <script src="main.js"></script>
+
+
+</body>
+</html>
